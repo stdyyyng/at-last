@@ -1,0 +1,6 @@
+
+{
+  "name": "QUESTION",
+  "description": "A stylish, mobile-responsive party quiz app that allows you to upload or generate fun questions, display them randomly one by one, and track your progress through the night.",
+  "requestFramePermissions": []
+}
