@@ -17,9 +17,9 @@ const DEFAULT_QUESTIONS: Question[] = [
   { id: 'q5', text: "가장 늦게 결혼할 것 같은 사람?", category: "지목하기" },
   { id: 'q6', text: "‘가장 최근에 디엠한 남자’ 이름이나 특징 말하기 (자니? 보내기)", category: "대답해" },
   { id: 'q7', text: "올해의 잘쓴템", category: "대답해" },
-  { id: 'q8', text: " 나의 은!밀!한! 이상형", category: "대답해" },
+  { id: 'q8', text: "나의 은!밀!한! 이상형", category: "대답해" },
   { id: 'q9', text: "사귀지 않아도 할 수 있는 스킨쉽 마지노선?", category: "대답해" },
-  { id: 'q10', text: " 흑역사 썰풀기", category: "대답해" },
+  { id: 'q10', text: "흑역사 썰풀기", category: "대답해" },
   { id: 'q11', text: "‘골라주는 스토리 올리기’", category: "미션" },
   { id: 'q12', text: "이성에게전화하기 (안받으면 마시기)", category: "미션" },
   { id: 'q13', text: "카톡 친구 목록에 ㄴ 치고 나오는 7번째 사람한테 이모티콘 보내기", category: "미션" },
@@ -219,4 +219,5 @@ export default function App() {
   );
 
 }
+
 
