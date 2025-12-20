@@ -82,10 +82,34 @@ const SetupView: React.FC<{ onStart: (qs: Question[]) => void, initialQuestions:
   const [tab, setTab] = useState<'write' | 'ai'>('write');
 
   const handleWriteSubmit = () => {
-    const qs = text.split('\n').filter(l => l.trim()).map(l => ({ id: generateId(), text: l.trim(), category: "USER" }));
+    const qs = text
+      .split('\n')
+      .filter(l => l.trim())
+      .map(l => {
+        const trimmed = l.trim();
+
+        // ✅ DEFAULT_QUESTIONS에서 text가 같은 질문 찾기
+        const found = DEFAULT_QUESTIONS.find(q => q.text === trimmed);
+
+        // 있으면 기존 category 유지
+        if (found) {
+          return {
+            ...found,
+            id: generateId(), // 새 게임용 id
+          };
+        }
+
+        // 없으면 USER 질문
+        return {
+          id: generateId(),
+          text: trimmed,
+          category: "USER",
+        };
+      });
+
     if (qs.length > 0) onStart(qs);
   };
-
+ 
   const handleAiSubmit = async () => {
     if (!prompt.trim()) return;
     setLoading(true);
@@ -195,3 +219,4 @@ export default function App() {
   );
 
 }
+
