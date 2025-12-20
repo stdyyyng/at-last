@@ -28,7 +28,7 @@ const DEFAULT_QUESTIONS: Question[] = [
   { id: 'q16', text: "학점 까기", category: "공개해" },
   { id: 'q17', text: "에타에 쓴 글 공개하기", category: "공개해" },
   { id: 'q18', text: "유튜브 recap 공개하기", category: "공개해" },
-  { id: 'q19', text: " 과에서 제일 ‘가능’인 사람 인스타 공개하기", category: "공개해" }  
+  { id: 'q19', text: "과에서 제일 ‘가능’인 사람 인스타 공개하기", category: "공개해" }  
 ];
 
 const generateId = () => Math.random().toString(36).substring(2, 9);
@@ -219,5 +219,6 @@ export default function App() {
   );
 
 }
+
 
 
