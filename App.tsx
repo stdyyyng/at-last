@@ -11,23 +11,23 @@ type AppState = 'Setup' | 'Playing' | 'Finished';
 
 const DEFAULT_QUESTIONS: Question[] = [
   { id: 'q1', text: "연애할 때 가장 애교 많을 사람?", category: "지목하기" },
-  { id: 'q2', text: "연애하는꼬라지가 제일 답답한 사람?", category: "지목하기" },
+  { id: 'q2', text: "좀비사태 일어나면 가장 먼저 죽을 사람?", category: "지목하기" },
   { id: 'q3', text: "연애할 때 가장 많이 싸울 것 같은 사람?", category: "지목하기" },
   { id: 'q4', text: "동창회 때 ‘너 변했다’ 들을 사람?", category: "지목하기" },
   { id: 'q5', text: "가장 늦게 결혼할 것 같은 사람?", category: "지목하기" },
-  { id: 'q6', text: "‘가장 최근에 디엠한 남자’ 이름이나 특징 말하기 (자니? 보내기)", category: "대답해" },
+  { id: 'q6', text: "‘가장 최근에 디엠한 남자’ 이름이나 특징 말하기", category: "대답해" },
   { id: 'q7', text: "올해의 잘쓴템", category: "대답해" },
   { id: 'q8', text: "나의 은!밀!한! 이상형", category: "대답해" },
   { id: 'q9', text: "사귀지 않아도 할 수 있는 스킨쉽 마지노선?", category: "대답해" },
   { id: 'q10', text: "흑역사 썰풀기", category: "대답해" },
-  { id: 'q11', text: "‘골라주는 스토리 올리기’", category: "미션" },
-  { id: 'q12', text: "이성에게전화하기 (안받으면 마시기)", category: "미션" },
+  { id: 'q11', text: "‘골라주는 스토리' 올리기", category: "미션" },
+  { id: 'q12', text: "이성에게전화하기 (마시기)", category: "미션" },
   { id: 'q13', text: "카톡 친구 목록에 ㄴ 치고 나오는 7번째 사람한테 이모티콘 보내기", category: "미션" },
   { id: 'q14', text: "이번 달 돈 제일 조금 쓴 사람 마시기", category: "공개해" },
   { id: 'q15', text: "인스타 돋보기/릴스탭 공개하기", category: "공개해" },
   { id: 'q16', text: "학점 까기", category: "공개해" },
   { id: 'q17', text: "에타에 쓴 글 공개하기", category: "공개해" },
-  { id: 'q18', text: "유튜브 recap 공개하기", category: "공개해" },
+  { id: 'q18', text: "유튜브/노래앱 recap 공개하기", category: "공개해" },
   { id: 'q19', text: "과에서 제일 ‘가능’인 사람 인스타 공개하기", category: "공개해" }  
 ];
 
@@ -219,6 +219,7 @@ export default function App() {
   );
 
 }
+
 
 
 
